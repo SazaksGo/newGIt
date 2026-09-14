@@ -1,8 +1,8 @@
 package main
 
 import (
+	"GITpro/feature1"
 	"fmt"
-	"test/GITTT/feature1"
 )
 
 func main() {
