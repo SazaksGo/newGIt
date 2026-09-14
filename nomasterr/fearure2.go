@@ -4,5 +4,5 @@ import "fmt"
 
 func Feature2() {
 
-	fmt.Println("i`m new mistake ")
+	fmt.Println("i`m new Mistake ")
 }
