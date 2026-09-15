@@ -2,7 +2,8 @@ package main
 
 import (
 	"GITpro/feature1"
-	nomasterr "GITpro/noMasterr"
+	"GITpro/feature2"
+	"GITpro/feature_postgres/simple_connection"
 	"fmt"
 )
 
@@ -11,5 +12,6 @@ func main() {
 
 	feature1.HiGIT()
 
-	nomasterr.Feature2()
+	feature2.Feature2()
+	simple_connection.CheckConnection()
 }
