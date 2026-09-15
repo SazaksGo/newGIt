@@ -18,5 +18,5 @@ func CheckConnection() {
 		panic(err)
 
 	}
-	fmt.Println("подключение прошло успешно ")
+	fmt.Println("Подключение прошло успешно ")
 }
