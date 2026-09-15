@@ -1,4 +1,4 @@
-package nomasterr
+package feature2
 
 import "fmt"
 
