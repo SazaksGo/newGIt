@@ -1,17 +1,24 @@
 package main
 
 import (
-	"GITpro/feature1"
-	"GITpro/feature2"
 	"GITpro/feature_postgres/simple_connection"
+	"GITpro/feature_postgres/simple_sql"
+	"context"
 	"fmt"
 )
 
 func main() {
-	fmt.Println("Hi Git")
+	ctx := context.Background()
 
-	feature1.HiGIT()
+	conn, err := simple_connection.CreateConnection(ctx)
+	if err != nil {
+		panic(err)
+	}
+	if err := simple_sql.CreateTable(ctx, conn); err != nil {
+		panic(err)
+	}
 
-	feature2.Feature2()
-	simple_connection.CheckConnection()
+	//if err := simple_sql.InsertRow(ctx, conn); err != //nil {
+	//panic(err)
+	fmt.Println("успех")
 }
