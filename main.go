@@ -18,7 +18,8 @@ func main() {
 		panic(err)
 	}
 
-	//if err := simple_sql.InsertRow(ctx, conn); err != //nil {
-	//panic(err)
+	if err := simple_sql.InsertRow(ctx, conn); err != nil {
+		panic(err)
+	}
 	fmt.Println("успех")
 }
