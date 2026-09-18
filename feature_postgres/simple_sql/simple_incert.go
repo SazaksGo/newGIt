@@ -8,10 +8,12 @@ import (
 
 func InsertRow(ctx context.Context, conn *pgx.Conn) error {
 
-	sqlQuery := ``
+	sqlQuery := `
+	INSERT INTO tasks (title,description,completed,created_at)
+	VALUES ('Домашка','сделать  домашку по матеше', FALSE, '2025-11-26 18:00:05')
+	`
 
 	_, err := conn.Exec(ctx, sqlQuery)
-	if err != nil {
-		return err
-	}
+
+	return err
 }
